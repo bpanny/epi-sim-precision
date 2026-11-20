@@ -1,0 +1,37 @@
+# Local archive
+_local_archive/
+
+# Input data and generated analysis results
+/data/
+/results_raw_quantile_heterogeneity/
+/results_figures_quantile_heterogeneity/
+/prospective_bootstrap_se_joint_sweep/
+/stopped_checkpoint_validation_20k/
+/quantile_gap_diagnostics/
+/htc_iid_20k/
+/paper_spaghetti_sparsity_se/
+/results_covariance_two_models/
+/toy_DKW_reusability/
+/toy_DKW_CDF_reusability/
+/iid_empirical_asymptotics_10m/
+
+# Temporary Python/R files
+__pycache__/
+*.py[cod]
+.Rhistory
+.RData
+.Rproj.user/
+.venv/
+venv/
+
+# Local exports and archives
+*.zip
+*.tar.gz
+*.svg
+*.pdf
+*.png
+
+# HTC logs
+logs/
+*.out
+*.err
