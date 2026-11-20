@@ -58,7 +58,7 @@ python scripts/quantile_theory.py
 
 Uncertainty quantification results appear in `results_raw_quantile_heterogeneity/full_n_model_bootstrap_unified103/`. 
 
-## 2. Copy processed trajectories to HTC
+## 2. Copy processed trajectories to HPC environment
 
 Transfer processed trajectories to HTC environment:
 
@@ -80,7 +80,7 @@ python3 scripts/merge_stopping_results.py --chunks htc_iid_20k/chunks --output-d
 
 Submit from the repository root so `SLURM_SUBMIT_DIR` resolves correctly. The Slurm specification is specific to Pitt CRC (cluster, account, partition and QoS); adapt scheduler directives for another HPC environment. The script executes `hpc/htc_iid_stopping.py`, array `0-99`, 100 stopping experiments, 20,000 bootstrap samples per checkpoint. The merger requires all 100 result and 100 saved-index chunk files and checks experiment/index integrity.
 
-## 3. Copy HTC results back to laptop
+## 3. Copy HPC results back to local environment
 
 Create the target directory and retrieve the two mandatory merged files:
 
